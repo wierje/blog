@@ -1,8 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.min_input {
+  min-width: 200px;
+}
+
 img {
   max-width: 400px;
 }
 
 .red_outline {
   border: 1px solid red;
-  padding: 4px 3px;
+  padding: 20px 35px;
+  background-color: azure;
+  margin: 10px;
+}
+
+#article1 {
+  color: blue;
+}
+
+a {
+  text-decoration: none;
+  color: firebrick;
+}
+
+a:hover {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+a:visited {
+  text-decoration: line-through;
 }

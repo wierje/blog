@@ -5,7 +5,7 @@
 		<link rel="stylesheet" type="text/css" href="main.css">
 	</head>
 	<body>
-		<article id="article 1">
+		<article id="article1">
 			<header>
 				<ul>
 					<li>Home</li>
@@ -13,66 +13,109 @@
 					<li>Links</li>
 				</ul>
 			</header>
-			<!-- This section is about bacon and href's -->
-			<section>
-				<a href="https://codecademy.com" target="_blank">href is a thing</a>
-				<img src="https://pixabay.com/static/uploads/photo/2016/07/06/01/20/ascend-1499694__180.jpg" alt="picture">
-				<p>Bacon ipsum dolor amet kevin pork tenderloin meatball beef ribs ham corned beef, tri-tip salami leberkas. Picanha shankle frankfurter beef ribs tail. Strip steak pork belly drumstick prosciutto, t-bone kevin sausage spare ribs doner tail biltong beef ribs. Prosciutto picanha meatloaf short loin short ribs ham pancetta turducken pastrami meatball tenderloin frankfurter.
-				</p>
-			</section>
-			<!-- Another meaningless section. -->
-			<section>
-				<p>Bacon ipsum dolor amet kevin pork tenderloin meatball beef ribs ham corned beef, tri-tip salami leberkas. Picanha shankle frankfurter beef ribs tail. Strip steak pork belly drumstick prosciutto, t-bone kevin sausage spare ribs doner tail biltong beef ribs. Prosciutto picanha meatloaf short loin short ribs ham pancetta turducken pastrami meatball tenderloin frankfurter.
-				</p>
-			</section>
-			<section>
-				<p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.
-				</p>
-			</section>
-			<footer>&copy; <span>2016 James Wier</span>
+			<form action="">
+				
+				<fieldset>
+					<label class="hidden" for="firstname">First Name</label>
+					<input type="text" required name="firstname" placeholder="First Name" id="firstname">
+					<label class="hidden" for="email">email</label>
+					<input type="email" required name="email" placeholder="foo@bar.com" id="email">
+					<label class="min_width" for="age">age</label>
+					<input type="number" required name="age" min="18" max="120" placeholder="18 and over" id="age">
+					<label class="hidden" for="favcolor">Favorite Color</label>
+					<input type="color" value="#00FF00" name="favcolor" id="favcolor">
+					<input type="text" name="country" value="USA" readonly>
+					<input type="color" value="#00FF00" name="favcolor" id="favcolor">
+					<input type="text" name="country" value="USA" readonly>
+				</fieldset>
+				
+				<fieldset>
+					<input type="checkbox" name="peanuts">
+					<label for="peanuts">Peanuts</label>
+					<input type="checkbox" name="shellfish">
+					<label for="shellfish">Shellfish</label>
+					<input type="checkbox" name="liver">
+					<label for="liver">Liver</label>
+					<input type="checkbox" name="kiwi">
+					<label for="kiwi">Kiwi</label>
+				</fieldset>
+				<fieldset>
+					<label for="red">Red</label>
+					<input type="radio" checked value="red" name="rgb" id="red">
+					<label for="Green">Red</label>
+					<input type="radio" value="green" name="rgb" id="green">
+					<label for="blue">Blue</label>
+					<input type="radio" value="blue" name="rgb" id="blue">
+					<label for="yellow">Yellow</label>
+					<input type="radio" value="yellow" name="rgb" id="yellow">
+				</fieldset>
+		
+			<label class="hidden" for="bio">about</label>
+			<textarea placeholder="A little about yourself" id="bio"></textarea>
+			
+			<input type="submit" value="Other Text" name="submit">
+			<!-- <button type="submit">Other Text</button> -->
+		</form>
+		<!-- This section is about bacon and href's -->
+		<section>
+			<a href="https://codecademy.com" target="_blank">href is a thing</a>
+			<img src="https://pixabay.com/static/uploads/photo/2016/07/06/01/20/ascend-1499694__180.jpg" alt="picture">
+			<p>Bacon ipsum dolor amet kevin pork tenderloin meatball beef ribs ham corned beef, tri-tip salami leberkas. Picanha shankle frankfurter beef ribs tail. Strip steak pork belly drumstick prosciutto, t-bone kevin sausage spare ribs doner tail biltong beef ribs. Prosciutto picanha meatloaf short loin short ribs ham pancetta turducken pastrami meatball tenderloin frankfurter.
+			</p>
+		</section>
+		<!-- Another meaningless section. -->
+		<section>
+			<p>Bacon ipsum dolor amet kevin pork tenderloin meatball beef ribs ham corned beef, tri-tip salami leberkas. Picanha shankle frankfurter beef ribs tail. Strip steak pork belly drumstick prosciutto, t-bone kevin sausage spare ribs doner tail biltong beef ribs. Prosciutto picanha meatloaf short loin short ribs ham pancetta turducken pastrami meatball tenderloin frankfurter.
+			</p>
+		</section>
+		<section>
+			<p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.
+			</p>
+		</section>
+		<footer>&copy; <span>2016 James Wier</span>
+	</footer>
+</article>
+
+<article id="article_2" class="red_outline">
+	<header>
+		<a href="http://dagger.com" target="_blank">Dagger Whitewater</a>
+		<img src="https://pixabay.com/static/uploads/photo/2016/07/06/01/47/nashville-1499719__180.jpg" alt="picture">
+	</header>
+	<article>
+		<section>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. </p>
+		</section>
+		<section>
+			<p>Cupcake ipsum dolor. Sit amet sugar plum jelly beans icing. Apple pie biscuit I love danish sweet roll powder I love. Gummi bears cake pudding. Ice cream croissant danish pastry I love. Gummies I love apple pie lollipop chocolate bar bonbon chocolate. I love apple pie pastry ice cream toffee gummi bears. Liquorice liquorice liquorice jujubes brownie. Candy jelly-o gingerbread gummies bear claw I love jelly.
+			</p>
+		</section>
+		<section>
+			<p>Tip top old bean sportacus old man in pub ron jeremy leader of men freestyle pit fighter, ron jeremy zap rowsdower old man in pub andrew weatherall terry thomas pit fighter frightfully nice freestyle tip top old bean sportacus leader of men. Toothbrush yosemite sam cream bun disaster elit mexican godlike borat musketeer, yosemite sam godlike musketeer elit cappuccino catcher cream bun disaster colonel mustard toothbrush et et sodales cum borat borat mexican’t, cream bun disaster borat borat toothbrush et sodales cum colonel mustard mustachio elit facial accessory musketeer borat yosemite sam et marquess of queensbury godlike mexican cappuccino catcher.
+			</p>
+		</section>
+		<footer>
+			Nothing to see here.
 		</footer>
 	</article>
-	
-	<article id="article_2" class="red_outline">
+	<article id="article 3">
 		<header>
-			<a href="http://dagger.com" target="_blank">Dagger Whitewater</a>
-			<img src="https://pixabay.com/static/uploads/photo/2016/07/06/01/47/nashville-1499719__180.jpg" alt="picture">
+			<a href="https://google.com" target="_blank">Google</a>
+			<img src="https://pixabay.com/static/uploads/photo/2016/06/22/16/47/guitar-1473417__180.png" alt="picture">
 		</header>
-		<article>
-			<section>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. </p>
-			</section>
-			<section>
-				<p>Cupcake ipsum dolor. Sit amet sugar plum jelly beans icing. Apple pie biscuit I love danish sweet roll powder I love. Gummi bears cake pudding. Ice cream croissant danish pastry I love. Gummies I love apple pie lollipop chocolate bar bonbon chocolate. I love apple pie pastry ice cream toffee gummi bears. Liquorice liquorice liquorice jujubes brownie. Candy jelly-o gingerbread gummies bear claw I love jelly.
-				</p>
-			</section>
-			<section>
-				<p>Tip top old bean sportacus old man in pub ron jeremy leader of men freestyle pit fighter, ron jeremy zap rowsdower old man in pub andrew weatherall terry thomas pit fighter frightfully nice freestyle tip top old bean sportacus leader of men. Toothbrush yosemite sam cream bun disaster elit mexican godlike borat musketeer, yosemite sam godlike musketeer elit cappuccino catcher cream bun disaster colonel mustard toothbrush et et sodales cum borat borat mexican’t, cream bun disaster borat borat toothbrush et sodales cum colonel mustard mustachio elit facial accessory musketeer borat yosemite sam et marquess of queensbury godlike mexican cappuccino catcher.
-				</p>
-			</section>
-			<footer>
-				Nothing to see here.
-			</footer>
-		</article>
-		<article id="article 3">
-			<header>
-				<a href="https://google.com" target="_blank">Google</a>
-				<img src="https://pixabay.com/static/uploads/photo/2016/06/22/16/47/guitar-1473417__180.png" alt="picture">
-			</header>
-			<section>
-				<p>Put a bird on it shabby chic bespoke banjo, roof party affogato food truck four dollar toast VHS chicharrones migas pabst fixie man bun. Small batch 3 wolf moon occupy 8-bit paleo photo booth post-ironic you probably haven't heard of them, williamsburg tote bag pitchfork knausgaard narwhal leggings seitan. Brunch before they sold out gluten-free pickled photo booth, four loko post-ironic scenester humblebrag. Occupy fingerstache swag pop-up, keytar +1 tumblr freegan cold-pressed vice sartorial seitan authentic. 8-bit whatever master cleanse, photo booth messenger bag deep v cardigan gochujang typewriter heirloom. Beard stumptown photo booth, shabby chic sriracha art party pabst blog 3 wolf moon waistcoat small batch williamsburg flannel vice. Leggings lumbersexual fanny pack wayfarers, swag tote bag blue bottle forage.</p>
-			</section>
-			<section>
-				<p>Actually bushwick flannel chambray, austin you probably haven't heard of them yr 90's meditation. Tacos crucifix normcore twee, YOLO occupy shoreditch green juice cronut neutra marfa tilde wayfarers. Keytar try-hard plaid blue bottle. Selfies fap umami leggings wayfarers taxidermy vinyl keytar, try-hard retro schlitz green juice master cleanse. Kitsch single-origin coffee before they sold out, everyday carry marfa keytar selvage. Hashtag chicharrones williamsburg tofu tote bag sriracha, bicycle rights before they sold out VHS cred everyday carry pabst. Umami dreamcatcher ethical VHS keytar.
-				</p>
-			</section>
-			<section class="red_outline">
-				<p>Echo park DIY freegan disrupt, cold-pressed beard kale chips gastropub roof party small batch humblebrag viral banh mi. Pabst chartreuse biodiesel, authentic kombucha seitan fap banjo everyday carry brunch four dollar toast bicycle rights. Locavore cliche mixtape, narwhal trust fund asymmetrical chicharrones aesthetic sriracha brooklyn food truck before they sold out blog fingerstache. Letterpress actually kombucha venmo disrupt, hammock health goth narwhal normcore tofu fixie. 90's gochujang everyday carry sustainable trust fund. Tacos four dollar toast crucifix, sustainable pop-up brunch XOXO artisan mixtape cronut swag tousled literally. Chia literally man bun farm-to-table 3 wolf moon, post-ironic selfies gluten-free stumptown shoreditch.
-				</p>
-			</section>
-			<footer>
-				Obama out.
-			</footer>
-		</article>
-	</body>
+		<section>
+			<p>Put a bird on it shabby chic bespoke banjo, roof party affogato food truck four dollar toast VHS chicharrones migas pabst fixie man bun. Small batch 3 wolf moon occupy 8-bit paleo photo booth post-ironic you probably haven't heard of them, williamsburg tote bag pitchfork knausgaard narwhal leggings seitan. Brunch before they sold out gluten-free pickled photo booth, four loko post-ironic scenester humblebrag. Occupy fingerstache swag pop-up, keytar +1 tumblr freegan cold-pressed vice sartorial seitan authentic. 8-bit whatever master cleanse, photo booth messenger bag deep v cardigan gochujang typewriter heirloom. Beard stumptown photo booth, shabby chic sriracha art party pabst blog 3 wolf moon waistcoat small batch williamsburg flannel vice. Leggings lumbersexual fanny pack wayfarers, swag tote bag blue bottle forage.</p>
+		</section>
+		<section>
+			<p>Actually bushwick flannel chambray, austin you probably haven't heard of them yr 90's meditation. Tacos crucifix normcore twee, YOLO occupy shoreditch green juice cronut neutra marfa tilde wayfarers. Keytar try-hard plaid blue bottle. Selfies fap umami leggings wayfarers taxidermy vinyl keytar, try-hard retro schlitz green juice master cleanse. Kitsch single-origin coffee before they sold out, everyday carry marfa keytar selvage. Hashtag chicharrones williamsburg tofu tote bag sriracha, bicycle rights before they sold out VHS cred everyday carry pabst. Umami dreamcatcher ethical VHS keytar.
+			</p>
+		</section>
+		<section class="red_outline">
+			<p>Echo park DIY freegan disrupt, cold-pressed beard kale chips gastropub roof party small batch humblebrag viral banh mi. Pabst chartreuse biodiesel, authentic kombucha seitan fap banjo everyday carry brunch four dollar toast bicycle rights. Locavore cliche mixtape, narwhal trust fund asymmetrical chicharrones aesthetic sriracha brooklyn food truck before they sold out blog fingerstache. Letterpress actually kombucha venmo disrupt, hammock health goth narwhal normcore tofu fixie. 90's gochujang everyday carry sustainable trust fund. Tacos four dollar toast crucifix, sustainable pop-up brunch XOXO artisan mixtape cronut swag tousled literally. Chia literally man bun farm-to-table 3 wolf moon, post-ironic selfies gluten-free stumptown shoreditch.
+			</p>
+		</section>
+		<footer>
+			Obama out.
+		</footer>
+	</article>
+</body>
 </html>
